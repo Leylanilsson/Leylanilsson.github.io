@@ -107,6 +107,7 @@ body {
   background-color: var(--bs-body-bg);
   -webkit-text-size-adjust: 100%;
   -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+  width: auto;
 }
 
 hr {
@@ -4214,9 +4215,9 @@ textarea.form-control-lg {
   --bs-navbar-color: rgba(255, 255, 255, 0.55);
   --bs-navbar-hover-color: rgba(255, 255, 255, 0.75);
   --bs-navbar-disabled-color: rgba(255, 255, 255, 0.25);
-  --bs-navbar-active-color: #fff;
-  --bs-navbar-brand-color: #fff;
-  --bs-navbar-brand-hover-color: #fff;
+  --bs-navbar-active-color: #000;
+  --bs-navbar-brand-color: #000;
+  --bs-navbar-brand-hover-color: #000;
   --bs-navbar-toggler-border-color: rgba(255, 255, 255, 0.1);
   --bs-navbar-toggler-icon-bg: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 30 30'%3e%3cpath stroke='rgba%28255, 255, 255, 0.55%29' stroke-linecap='round' stroke-miterlimit='10' stroke-width='2' d='M4 7h22M4 15h22M4 23h22'/%3e%3c/svg%3e");
 }
@@ -11028,7 +11029,7 @@ body {
     color: rgba(255, 255, 255, 0.75);
   }
   #mainNav .nav-link:active {
-    color: #fff;
+    color: #000;
   }
   #mainNav.navbar-shrink {
     background-color: #fff;
@@ -11131,6 +11132,10 @@ body {
     padding: 0 0 0 2rem;
     border-left: 0.5rem solid #64a19d;
   }
+  .projects-section2 .featured-text {
+    padding: 0 0 0 2rem;
+    border-right: 0.5rem solid #64a19d;
+  }
 }
 .projects-section .project-text {
   padding: 3rem;
@@ -11162,7 +11167,8 @@ body {
 }
 
 .contact-section {
-  padding-top: 5rem;
+  padding-top: 1rem;
+  width: cover;
 }
 .contact-section .card {
   border: 0;
@@ -11178,7 +11184,7 @@ body {
   opacity: 1;
   border-color: #64a19d;
   border-width: 0.25rem;
-  width: 3rem;
+  width: auto
 }
 .contact-section .social {
   margin-top: 5rem;
@@ -11200,5 +11206,41 @@ body {
 }
 
 .footer {
-  padding: 5rem 0;
+  padding: 1rem 0;
 }
+
+.projectmaster-header {
+  position: relative;
+  width: 100%;
+  min-height: 1,33rem;
+  padding: 1rem;
+  background: linear-gradient(to bottom, rgba(0, 0, 0, 0.3) 0%, rgba(0, 0, 0, 0.7) 75%, #000 100%), url("../assets/img/Bgportfolio.png");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-attachment: scroll;
+  background-size: cover;
+}
+
+.project-1-header {
+  position: relative;
+  width: 100%;
+  height: auto;
+  min-height: 35rem;
+  padding: 15rem 0;
+  background: linear-gradient(to bottom, rgba(0, 0, 0, 0.3) 0%, rgba(0, 0, 0, 0.7) 75%, #000 100%), url("../assets/img/project1/Project1-head.png");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-attachment: scroll;
+  background-size: cover;
+}
+
+project-description.img {
+  display: block;
+ height: 3rem
+ width: 3rem
+}
+
+.text-project-right{
+ text-align: right;
+}
+
