@@ -11212,7 +11212,7 @@ body {
 .projectmaster-header {
   position: relative;
   width: 100%;
-  min-height: 1,33rem;
+  min-height: 1rem;
   padding: 1rem;
   background: linear-gradient(to bottom, rgba(0, 0, 0, 0.3) 0%, rgba(0, 0, 0, 0.7) 75%, #000 100%), url("../assets/img/Bgportfolio.png");
   background-position: center;
@@ -11234,6 +11234,18 @@ body {
   background-size: cover;
 }
 
+.aboutmaster-header {
+  position: relative;
+  width: 100%;
+  min-height: 5rem;
+  padding: 1rem;
+  background: linear-gradient(to bottom, rgba(0, 0, 0, 0.3) 0%, rgba(0, 0, 0, 0.7) 75%, #000 100%), url("../assets/img/Bgportfolio.png");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-attachment: scroll;
+  background-size: cover;
+}
+
 project-description.img {
   display: block;
  height: 3rem
@@ -11243,6 +11255,10 @@ project-description.img {
 .text-project-right{
  text-align: right;
 }
+
+.text-project-centre{
+  text-align: center;
+ }
 
 *{
   padding: 0%;
@@ -11259,3 +11275,9 @@ project-description.img {
   padding: 70px 30px 20px;
 
  }
+ 
+*{
+  padding: 0%;
+  margin: 0;
+  box-sizing: border-box;
+}
