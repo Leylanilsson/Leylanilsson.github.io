@@ -11244,3 +11244,18 @@ project-description.img {
  text-align: right;
 }
 
+*{
+  padding: 0%;
+  margin: 0;
+  box-sizing: border-box;
+ }
+
+ .footercontainer{
+  background-color: #000;
+
+ }
+ .footercontainer{
+  width: 100%;
+  padding: 70px 30px 20px;
+
+ }
