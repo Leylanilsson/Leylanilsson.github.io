@@ -11240,7 +11240,7 @@ body {
   width: 100%;
   height: auto;
   min-height: 35rem;
-  padding: 15rem 0;
+  padding: 20rem 0;
   background: linear-gradient(to bottom, rgba(0, 0, 0, 0.3) 0%, rgba(0, 0, 0, 0.7) 75%, #000 100%), url("../assets/img/project2/project2-head.png");
   background-position: center;
   background-repeat: no-repeat;
@@ -11296,7 +11296,11 @@ project-description.img {
   box-sizing: border-box;
 }
 
-Timeline 
+
+/*Timeline */
+.timeline-container{
+  background-color: #000;
+}
 .hexa{
   border: 0px;
   float: left;
@@ -11304,7 +11308,7 @@ Timeline
   height: 35px;
   width: 60px;
   font-size: 22px;
-  background: white;
+  background: #000;
   color: #000;
   position: relative;
   margin-top: 15px;
@@ -11340,6 +11344,7 @@ Timeline
   width: 100%;
   margin-top: 20px;
   list-style-type: none;
+  background-color: #000;
 }
 
 .timeline:before {
@@ -11408,7 +11413,7 @@ Timeline
 .flag {
   position: relative;
   display: inline;
-  background: white;
+  background: #000;
   font-weight: 600;
   z-index: 15;
   padding: 6px 10px;
@@ -11450,7 +11455,7 @@ Timeline
   z-index: 14;
   line-height: 1em;
   vertical-align: middle;
-  color: #fff;
+  color: #000;
 }
 
 .direction-l .time-wrapper {
@@ -11465,17 +11470,23 @@ Timeline
   background: var(--bs-primary);
   display: inline-block;
   padding: 8px;
+  border-radius: 5px;
+  color: #fff;
 }
 
 .desc {
   position: relative;
   margin: 1em 0 0 0;
   padding: 1em;
-  background: rgb(254,254,254);
+  background: #000;
   -webkit-box-shadow: 0 0 1px rgba(0,0,0,0.20);
   -moz-box-shadow: 0 0 1px rgba(0,0,0,0.20);
   box-shadow: 0 0 1px rgba(0,0,0,0.20);
   z-index: 15;
+  color: #adb5bd;
+  border: #64a19d;
+  border-style: outset;
+  border-radius: 20px;
 }
 
 .direction-l .desc,
@@ -11540,7 +11551,7 @@ Timeline
     top: 50%;
     margin-top: -8px;
     border: solid transparent;
-    border-left-color: rgb(254,254,254);
+    border-left-color: #000;
     border-width: 8px;
   }
 
@@ -11548,7 +11559,7 @@ Timeline
     top: 50%;
     margin-top: -8px;
     border: solid transparent;
-    border-right-color: rgb(254,254,254);
+    border-right-color: #000);
     border-width: 8px;
     left: -8px;
   }
@@ -11857,3 +11868,103 @@ Timeline
   color: var(--bs-gray);
 }
 
+.skillstypetab input[type="radio"]:hover + label{
+  color: #fff
+}
+
+input{
+  display: none;
+} 
+
+.projectcontainer{
+ display: grid;
+  
+}
+
+.projectsimg{
+  width: 100%;
+  margin: auto;
+  display: grid;
+  background-color: #000;
+  grid-template-columns: repeat(4, 1fr);
+  grid-gap: 50px;
+  -ms-grid-row-align: center;
+  height: 500px;
+}
+
+.pic{
+  position: relative;
+  height: 230px;
+  margin: 10px;
+  margin-top: 100px;
+  float: right;
+
+}
+
+.pic img{
+  width: 100%;
+  height: 100%;
+  border-radius: 10px;
+  opacity: 0.9;
+  
+}
+
+.pic:hover img{
+  opacity: 0.5;
+}
+
+.pic a{
+  position: absolute;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  bottom: 80px;
+  left: 50px;
+  right: 50px;
+  top: 80px;
+  color: #adb5bd;
+  padding: 5px 10px;
+  border-radius: 5px;
+  font-size: 25px;
+  text-decoration: none;
+  visibility: hidden;
+  opacity: 0;
+  z-index: 1;
+  cursor: default;
+}
+
+.pic:hover a{
+  visibility: visible;
+  opacity: 1;
+}
+
+.projecttext{
+  color: #adb5bd;
+}
+
+.carouselsection{
+  background-color: #000;
+}
+
+#carouselExample {
+  margin: 0 auto;
+  max-width: 900px; /* Adjust the width to your desired size */
+  background-color: #000;
+}
+
+/* Optional: Style the carousel controls */
+.carousel-control-prev,
+.carousel-control-next {
+  width: 30px;
+  height: 30px;
+  background-color: rgba(0, 0, 0, 0.5);
+  border-radius: 50%;
+  color: #fff;
+}
+
+.carousel-control-prev-icon,
+.carousel-control-next-icon {
+  background-color: transparent;
+  background-size: 100%, 100%;
+  border: none;
+}
