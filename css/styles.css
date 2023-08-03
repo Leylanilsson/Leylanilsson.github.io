@@ -371,7 +371,7 @@ select {
 }
 
 [role=button] {
-  cursor: pointer;
+  cursor: default;
 }
 
 select {
@@ -395,7 +395,7 @@ button:not(:disabled),
 [type=button]:not(:disabled),
 [type=reset]:not(:disabled),
 [type=submit]:not(:disabled) {
-  cursor: pointer;
+  cursor: default;
 }
 
 ::-moz-focus-inner {
@@ -481,7 +481,7 @@ iframe {
 
 summary {
   display: list-item;
-  cursor: pointer;
+  cursor: default;
 }
 
 progress {
@@ -2022,7 +2022,7 @@ progress {
   overflow: hidden;
 }
 .form-control[type=file]:not(:disabled):not([readonly]) {
-  cursor: pointer;
+  cursor: default;
 }
 .form-control:focus {
   color: #212529;
@@ -2131,7 +2131,7 @@ textarea.form-control-lg {
   padding: 0.375rem;
 }
 .form-control-color:not(:disabled):not([readonly]) {
-  cursor: pointer;
+  cursor: default;
 }
 .form-control-color::-moz-color-swatch {
   border: 0 !important;
@@ -2377,7 +2377,7 @@ textarea.form-control-lg {
   width: 100%;
   height: 0.5rem;
   color: transparent;
-  cursor: pointer;
+  cursor: default;
   background-color: #dee2e6;
   border-color: transparent;
   border-radius: 1rem;
@@ -2406,7 +2406,7 @@ textarea.form-control-lg {
   width: 100%;
   height: 0.5rem;
   color: transparent;
-  cursor: pointer;
+  cursor: default;
   background-color: #dee2e6;
   border-color: transparent;
   border-radius: 1rem;
@@ -2797,7 +2797,7 @@ textarea.form-control-lg {
   text-align: center;
   text-decoration: none;
   vertical-align: middle;
-  cursor: pointer;
+  cursor: default;
   -webkit-user-select: none;
      -moz-user-select: none;
           user-select: none;
@@ -5304,7 +5304,7 @@ textarea.form-control-lg {
   max-width: 100%;
   font-size: var(--bs-toast-font-size);
   color: var(--bs-toast-color);
-  pointer-events: auto;
+  pointer-events: none;
   background-color: var(--bs-toast-bg);
   background-clip: padding-box;
   border: var(--bs-toast-border-width) solid var(--bs-toast-border-color);
@@ -5431,7 +5431,7 @@ textarea.form-control-lg {
   flex-direction: column;
   width: 100%;
   color: var(--bs-modal-color);
-  pointer-events: auto;
+  pointer-events: none;
   background-color: var(--bs-modal-bg);
   background-clip: padding-box;
   border: var(--bs-modal-border-width) solid var(--bs-modal-border-color);
@@ -6068,7 +6068,7 @@ textarea.form-control-lg {
   margin-right: 3px;
   margin-left: 3px;
   text-indent: -999px;
-  cursor: pointer;
+  cursor: default;
   background-color: #fff;
   background-clip: padding-box;
   border: 0;
@@ -8380,7 +8380,7 @@ textarea.form-control-lg {
 }
 
 .pe-auto {
-  pointer-events: auto !important;
+  pointer-events: none !important;
 }
 
 .rounded {
@@ -11611,7 +11611,7 @@ Timeline
 .divleftgrid{
   background-color: #000;
   padding: 10PX;
-  padding-left: 30px;
+  padding-left: 100px;
   width: 40%;
   height: 700PX;
   float: left;
@@ -11637,7 +11637,7 @@ Timeline
 }
 
 .skill-box .title{
-  color: #000;
+  color: #adb5bd;
   font-weight: 600;
   font-size: 1em;
 }
@@ -11647,7 +11647,7 @@ Timeline
   display: block;
   height: 100%;
   width: 90%;
-  background: #fff;
+  background: #64a19d;
   animation: progress 0.4s ease-in-out forwards;
   opacity: 0;
 }
@@ -11699,7 +11699,7 @@ Timeline
   color: #000;
   padding: 2px 6px;
   border-radius: 3px;
-  background: #fff;
+  background: #adb5bd;
   z-index: 1;
 }
 
@@ -11711,7 +11711,7 @@ Timeline
   height: 10px;
   width: 5px;
   z-index: -1;
-  background-color: #fff;
+  background-color: #adb5bd;
   transform: translateY(-50%) rotate(45deg)
 }
 
@@ -11727,43 +11727,46 @@ Timeline
 .accordion .contentbx .label{
   position: relative;
   padding: 10px;
-  background: #64a19d;;
-  color:#fff;
+  color:#64a19d;
   height: 70px;
   width: 500px;
   border-radius: 10px;
+  border-style: outset;
+  border-color: #64a19d;
 }
 
 .accordion .contentbx .labelsoft-right{
   position: flex;
   float: right;
   padding: 5px 5px 5px 5px;
-  background: #64a19d;;
   color:#fff;
   height: 70px;
   width: 230px;
-  border-radius: 10px;
+  border-radius: 90px;
   margin-bottom: 20px;
+  border-style: outset;
+  border-color: #64a19d;
 }
 
 .accordion .contentbx .labelsoft-left{
   position: flex;
   float: left;
   padding: 5px 5px 5px 5px;
-  background: #64a19d;;
   color:#fff;
-  cursor: pointer;
+  cursor: default;
   height: 70px;
   width: 230px;
-  border-radius: 10px;
+  border-radius: 90px;
   margin-left: 10px;
   margin-bottom: 20px;
+  border-style: outset;
+  border-color: #64a19d;
 }
 
 .accordion .contentbx h4{
   text-align: center;
   padding-top: 20px;
-  color: #000;
+  color: #adb5bd;
   font-size: 1em;
   font-weight: 600;
 }
@@ -11788,7 +11791,7 @@ Timeline
   background: #000;
   height: 0;
   overflow: hidden;
-  transition: 0.5s;
+  transition: 0.2s ease;
   overflow-y: auto;
   border-radius: 10px;
   color: #adb5bd;
@@ -11796,7 +11799,7 @@ Timeline
 }
 
 .accordion .contentbx.active .contentskill{
-  height: 150px;
+  height: auto;
   padding: 10px;
 
 }
@@ -11853,3 +11856,4 @@ Timeline
 .skillstypetab input[type="radio"]:not(:checked) + label{
   color: var(--bs-gray);
 }
+

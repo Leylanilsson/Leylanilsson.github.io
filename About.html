@@ -66,68 +66,54 @@
                         <div class="contentbx">
                             <div class="labelsoft-right">
                                 <div class="skillbox">
-                                    <h4>Comonication</h4>
+                                    <h4>Communication</h4>
                                 </div>
                             </div>
                             <div class="labelsoft-left">
                                 <div class="skillbox">
-                                    <h4>Comonication</h4>
+                                    <h4>Teamwork</h4>
                                 </div>
                             </div>
                             <div class="labelsoft-right">
                                 <div class="skillbox">
-                                    <h4>Comonication</h4>
+                                    <h4>Time management</h4>
                                 </div>
                             </div>
                             <div class="labelsoft-left">
                                 <div class="skillbox">
-                                    <h4>Comonication</h4>
+                                    <h4>Patience</h4>
                                 </div>
                             </div>
                             <div class="labelsoft-right">
                                 <div class="skillbox">
-                                    <h4>Comonication</h4>
+                                    <h4>Flexibility</h4>
                                 </div>
                             </div>
                             <div class="labelsoft-left">
                                 <div class="skillbox">
-                                    <h4>Comonication</h4>
+                                    <h4>Attention to Detail</h4>
                                 </div>
                             </div>
                             <div class="labelsoft-right">
                                 <div class="skillbox">
-                                    <h4>Comonication</h4>
+                                    <h4>Organization</h4>
                                 </div>
                             </div>
                             <div class="labelsoft-left">
                                 <div class="skillbox">
-                                    <h4>Comonication</h4>
-                                </div>
-                            </div>
-                            <div class="labelsoft-right">
-                                <div class="skillbox">
-                                    <h4>Comonication</h4>
-                                </div>
-                            </div>
-                            <div class="labelsoft-left">
-                                <div class="skillbox">
-                                    <h4>Comonication</h4>
+                                    <h4>Problem-solving</h4>
                                 </div>
                             </div>
                         </div>
                     </div>
                 </div>
-                
-    
-                
-
             </div>
 
             <input type="radio" id="technical" name="skillstypetab" checked="checked">
             <label for="technical">Technical Skills</label>
             <div class="skilltab">
                 <div class="skillscontainer">
-                    <div class="accordion">
+                    <div class="accordion" checked>
                         <div class="contentbx">
                             <div class="label">
                                 <div class="skill-box">
@@ -140,7 +126,11 @@
                                 </div>
                             </div>
                             <div class="contentskill">
-                                <p>Excel</p>
+                                <p> 
+                                    <ul>Excel; Visualization, pivot-tables, charts, power query, list, datacleaning etc.</ul>
+                                    <ul>Knows the basics in Word and Powerpoint</ul>
+                                    
+                                </p>
                             </div>
                         </div>
                         <div class="contentbx">
@@ -155,7 +145,11 @@
                                 </div>
                             </div>
                             <div class="contentskill">
-                                <p>Lorem insnkfkdjfldsfljfdj</p>
+                                <p>
+                                    <ul>Sheets; Planning, budgeting, charts</ul>
+                                    <ul>Forms; create and design form for purpose</ul>
+                                    <ul>Knows the basics in Docs and Slides</ul>
+                                </p>
                             </div>
                         </div>
                         <div class="contentbx">
@@ -187,7 +181,7 @@
                                 </div>
                             </div>
                             <div class="contentskill">
-                                <p>Lorem insnkfkdjfldsfljfdj</p>
+                                <p>Can do basic visuals of charts, statsticis etc in Excel, Google sheets or tableau</p>
                             </div>
                         </div>
                     </div> 
@@ -195,14 +189,21 @@
         </div>
     </div>
     <script>
-        const accordion = document.getElementsByClassName("contentbx");
+        const accordions = document.getElementsByClassName("contentbx");
 
-        for (i = 0; i<accordion.length; i++ ){ 
-            accordion[i].addEventListener("click",function(){
-                this.classList.toggle("active")
-            }) 
+        for (let i = 0; i < accordions.length; i++) {
+          accordions[i].addEventListener("click", function () {
+            if (!this.classList.contains("active")) {
+              // Hide other descriptions
+              for (let j = 0; j < accordions.length; j++) {
+                if (j !== i) {
+                  accordions[j].classList.remove("active");
+                }
+              }
+            }
+            this.classList.toggle("active");
+          });
         }
-        
     </script>
 </div> 
 <!-- code that fixes foooter width? somehow-->         
